@@ -13,7 +13,7 @@ public class ZaikoStockServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("jsp/stocks/zaiko.jsp").forward(request, response);
+        request.getRequestDispatcher("jsp/zaiko/input.jsp").forward(request, response);
     }
 
     @Override
@@ -35,11 +35,11 @@ public class ZaikoStockServlet extends HttpServlet {
 
         	request.setAttribute("name", name);
             request.setAttribute("amount", amountNum);
-            request.getRequestDispatcher("jsp/stocks/zaiko.jsp").forward(request, response);
+            request.getRequestDispatcher("jsp/zaiko/input.jsp").forward(request, response);
             return;
         }
         
-        request.getRequestDispatcher("jsp/stocks/success.jsp").forward(request, response);
+        request.getRequestDispatcher("jsp/zaiko/success.jsp").forward(request, response);
     }
 
 }

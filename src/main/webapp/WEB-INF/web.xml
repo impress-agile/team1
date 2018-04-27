@@ -11,4 +11,12 @@
         <servlet-name>StockServlet</servlet-name>
         <url-pattern>/stocks</url-pattern>
     </servlet-mapping>
+        <servlet>
+        <servlet-name>StockServlet</servlet-name>
+        <servlet-class>rodeo.agile.impress.pos.StockServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StockServlet</servlet-name>
+        <url-pattern>/stocks</url-pattern>
+    </servlet-mapping>
 </web-app>
